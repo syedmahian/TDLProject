@@ -26,11 +26,7 @@ The project should run in your web browser, using the port "localhost:9092".
 In order to run tests you need an IDE that supports Java, if you use Spring tools you can right click on your project folder, click on "Coverage as" then "Junit". This will run all the test files, if there are any issues with testing please try updating your maven project and refershing Spring Tools. This was an issue that was faced throughout the project but it can be fixed by updating the maven project.
 
 # Tests
-Rest:
-ToDoControllerUnitTest.java
-UserControllerUnitTest.java
-ToDoControllerIntegrationTest.java
-UserControllerIntegrationTest.java
+Rest: ToDoControllerUnitTest.java, UserControllerUnitTest.java, ToDoControllerIntegrationTest.java, UserControllerIntegrationTest.java
 
 # Built With
 * Maven
