@@ -32,25 +32,6 @@ public class ToDoController {
 		this.service = service;
 	}
 
-	@GetMapping("/hello") // This is the mapping i want - Get me something
-	public String hello() {
-		return "hello from car";
-	}
-
-	// pathVariable - this is the values in the URL "?id=2"
-	// @RequestBody -- put/post - POST MEHTOD body of that request
-
-	// pattern matching here url - /hello/<valuehere>
-	@GetMapping("/hello/{id}")
-	public String helloName(@PathVariable String id) {
-		return "Hello " + id;
-	}
-
-	// @GetMapping("/num1/{num1}/num2/{num2}/num3/{num3}")
-	@GetMapping("/num1/{num1}/num2/{num2}")
-	public int addTwo(@PathVariable("num1") int number1, @PathVariable("num2") int number2) {
-		return number1 + number2;
-	}
 
 	// Create method
 	@PostMapping("/create")
