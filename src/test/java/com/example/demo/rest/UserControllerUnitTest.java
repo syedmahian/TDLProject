@@ -22,8 +22,8 @@ import com.example.demo.persistence.domain.User;
 import com.example.demo.service.UserService;
 
 
-@SpringBootTest // spring boot test lets spring know this is a test file and treat as such
-@ActiveProfiles("dev") // lets us set the application porperties file.
+@SpringBootTest 
+@ActiveProfiles("dev") 
 public class UserControllerUnitTest {
 
 	@Autowired
@@ -46,7 +46,7 @@ public class UserControllerUnitTest {
 	private final User Test_USER_3 = new User(3L, "Name 3");
 	private final User Test_USER_4 = new User(4L, "Name 4");
 
-	// I also want to create a list of cars that i can use later
+	
 	private final List<User> LISTOFUSERS = List.of(TEST_USER_1, TEST_USER_2, Test_USER_3, Test_USER_4);
 
 	// Create

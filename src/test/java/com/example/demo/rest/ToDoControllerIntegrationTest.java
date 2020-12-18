@@ -29,7 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-// sql runs in order schema followed by data file - JH dont make the mistake
+
 @Sql(scripts = { "classpath:tdl-schema.sql",
 		"classpath:tdl-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles(profiles = "dev")
@@ -48,13 +48,13 @@ public class ToDoControllerIntegrationTest {
 		return this.mapper.map(toDo, ToDoDto.class);
 	}
 
-	// During our test we want give it some data to use
+	
 	private final ToDo TEST_toDo_1 = new ToDo("title 1","task 1"); 
 	private final ToDo TEST_toDo_2 = new ToDo("title 2","task 2");
 	private final ToDo TEST_toDo_3 = new ToDo("title 3","task 3"); 
 
 
-	// I also want to create a list of cars that i can use later
+	
 	private final List<ToDo> LISTOFTODOS = List.of(TEST_toDo_1, TEST_toDo_2, TEST_toDo_3);
 
 	private final String URI = "/toDo";
@@ -77,8 +77,7 @@ public class ToDoControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-	//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-    //				.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 	}
 	// Update test
 	@Test
@@ -98,8 +97,7 @@ public class ToDoControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-	//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-	//		.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+	
 				}
 	// Read test
 	@Test
@@ -119,8 +117,7 @@ public class ToDoControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-//				.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 	}
 	
 	// Read All test
@@ -156,8 +153,7 @@ public class ToDoControllerIntegrationTest {
 
 			this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-//			this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-//					.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 		}
 		
 		// Delete test
@@ -170,8 +166,7 @@ public class ToDoControllerIntegrationTest {
 
 			this.mvc.perform(request).andExpect(checkStatus);
 
-//			this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-//					.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 		}
 
 

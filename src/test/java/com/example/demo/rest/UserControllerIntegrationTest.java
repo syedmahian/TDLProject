@@ -31,7 +31,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-// sql runs in order schema followed by data file - JH dont make the mistake
+
 @Sql(scripts = { "classpath:tdl-schema.sql",
 		"classpath:tdl-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles(profiles = "dev")
@@ -57,7 +57,7 @@ public class UserControllerIntegrationTest {
 	private final List<ToDo> listOfToDos = Collections.emptyList(); 
 
 
-	// I also want to create a list of cars that i can use later
+
 	private final List<User> LISTOFUSERS = List.of(TEST_user_1, TEST_user_2, TEST_user_3);
 
 	private final String URI = "/user";
@@ -80,8 +80,7 @@ public class UserControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-	//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-    //				.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+	
 	}
 	// Update test
 	@Test
@@ -97,7 +96,7 @@ public class UserControllerIntegrationTest {
 
 		ResultMatcher checkStatus = status().isAccepted();
 
-	//	UserDto testSavedDTO = mapToDTO(new User("name 1"));
+	
 		user.setId(1L);
 		UserDto expected = mapToDTO(user);
 		String expectedAsJSON = this.jsonifier.writeValueAsString(expected);
@@ -106,8 +105,7 @@ public class UserControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-	//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-	//		.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+	
 				}
 
 
@@ -130,8 +128,7 @@ public class UserControllerIntegrationTest {
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
 
-//		this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-//				.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 	}
 	
 
@@ -146,7 +143,6 @@ public class UserControllerIntegrationTest {
 
 			this.mvc.perform(request).andExpect(checkStatus);
 
-//			this.mvc.perform(post(URI + "/create").contentType(MediaType.APPLICATION_JSON).content(testDTOAsJSON))
-//					.andExpect(status().isCreated()).andExpect(content().json(testSavedDTOAsJSON));
+
 		}
 }

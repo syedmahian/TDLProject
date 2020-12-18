@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">To-Do List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">To-Dos <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="/html/user.html">Users</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+       
+      <!--Input boxes-->
+        
+    <input type="text" id="title-input" placeholder="Enter a Title..." />
+        <input type="text" id="task-input" placeholder="Enter a Task.." />
+        <input type="text" id="userId-input" placeholder="Assign Task to User by ID..." />
+      
+      <!--CRUD Buttons-->
+        <button id="createButton">Create</button>
+        <button id="readAllButton">Read All</button>
+        <a href="readOnetoDo.html" > <button class="button">Read by ID </button></a>
+        <a href="updateTask.html" > <button class="button">Update </button></a>
+       
+     
+
+    </div>
+    <!--Div to display informations-->
+        <div id="myDiv">
+
+        </div>
+    
+
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

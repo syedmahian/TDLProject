@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 public class ToDoDto {
 
 	private Long id;
-	private String title; //used to be name
-	private String task; // used to be colour
+	private String title; 
+	private String task; 
 	
 
-	// this will spit out JSON
+
 
 }

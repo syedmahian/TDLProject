@@ -16,7 +16,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity // classes that represent tables in our DB
+@Entity // classes that represent tables in  DB
 @Data
 @NoArgsConstructor
 public class User {
