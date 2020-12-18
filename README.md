@@ -7,6 +7,9 @@ This git repository holds both the front-end and back-end of my project. The fro
 
 The documentation folder holds all the documentation used in the planning and execution of the project.
 
+# Jira Project Management Board:
+[Project Management Board](https://sdet2020oct.atlassian.net/secure/RapidBoard.jspa?projectKey=TDL2020&useStoredSettings=true&rapidView=6&atlOrigin=eyJpIjoiZjk2ODg4Yjc3OGE2NGM3OWI3MzVkODczNTdlYzE2M2QiLCJwIjoiaiJ9)
+
 
 
 # Prerequisites
