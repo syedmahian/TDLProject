@@ -67,6 +67,6 @@ public class ToDoController {
 		return this.service.delete(id) ? new ResponseEntity<>(HttpStatus.NO_CONTENT)
 				// no_content - if deleted successfully then should return nothing
 				: new ResponseEntity<>(HttpStatus.I_AM_A_TEAPOT);
-		// if the record isnt found!
+		
 	}
 }

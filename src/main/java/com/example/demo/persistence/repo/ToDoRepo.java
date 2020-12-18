@@ -12,11 +12,7 @@ import com.example.demo.persistence.domain.ToDo;
 @Repository
 public interface ToDoRepo extends JpaRepository<ToDo, Long> {
 
-	// it allows us to implement
-	// create
-	// read
-	// update
-	// delete
+	
 
 	// custom sql statements e.g. find by make or model .........
 

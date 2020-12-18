@@ -21,8 +21,8 @@ import com.example.demo.dto.ToDoDto;
 import com.example.demo.persistence.domain.ToDo;
 import com.example.demo.service.ToDoService;
 
-@SpringBootTest // spring boot test lets spring know this is a test file and treat as such
-@ActiveProfiles("dev") // lets us set the application porperties file.
+@SpringBootTest 
+@ActiveProfiles("dev") 
 public class ToDoControllerUnitTest {
 
 	@Autowired
@@ -34,7 +34,7 @@ public class ToDoControllerUnitTest {
 	@Autowired
 	private ModelMapper mapper;
 
-	// same thing from our service
+	
 	private ToDoDto maptoDto(ToDo toDo) {
 		return this.mapper.map(toDo, ToDoDto.class);
 	}

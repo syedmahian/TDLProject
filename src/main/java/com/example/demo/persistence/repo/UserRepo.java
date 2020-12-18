@@ -12,13 +12,7 @@ import com.example.demo.persistence.domain.User;
 @Repository
 public interface UserRepo extends JpaRepository<User, Long> {
 
-	// it allows us to implement
-	// create
-	// read
-	// update
-	// delete
-
-	// custom sql statements e.g. find by make or model .........
+	
 	
 	// find all by title
 		// JPQL

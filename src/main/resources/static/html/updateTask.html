@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<div class="container">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">To-Do List</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="../index.html">To-Dos <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="user.html">Users</a>
+        </div>
+      </div>
+    </nav>
+      <br>
+<!-- postid
+id
+name
+email
+body -->
+
+      <form method="post"  class="viewRecord">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Post id:</label>
+          
+        </div>
+        
+        
+      </form>
+      
+      <div>
+        <input type="text" class="form-control"  id="commentPostId">
+        <input type="text" class="form-control"  id="toDoTitle">
+        <input type="text" class="form-control"  id="toDoTask">
+        <input type="text" class = "form-control" id="toDoUser">
+        <button type="" class="btn btn-success btn-block" value="update" id="UpdateSubmit">Update</button>
+      
+      </div>
+
+      <div id="displayDiv">
+
+      </div>
+
+</div>
+<body>
+    <script src="../js/updateTask.js"></script>
+
+</body>
+</html>

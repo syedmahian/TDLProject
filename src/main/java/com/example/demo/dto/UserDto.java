@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 public class UserDto {
 
 	public Long id;
-	public String fullName; //used to be name
+	public String fullName; 
 	private List<ToDoDto> toDos = new ArrayList<>();
 }

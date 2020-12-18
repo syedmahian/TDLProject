@@ -11,18 +11,12 @@ import javax.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity // classes that represent tables in our DB
+@Entity // classes that represent tables in DB
 @Data
 @NoArgsConstructor
 public class ToDo {
 
-	// default constructor
-	// all args constructor
-	// getters
-	// setters
-	// toString
-	// equals and hasCode
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
