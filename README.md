@@ -2,6 +2,8 @@
 
 The TDL Project aims to create a Spring Boot To-Do List application. It has the CRUD functionalities for two entities: User and ToDos. The back end is programmed using Java, while the front-end was programmed using HTML, CSS and Javascript. SQL was used as the database running from localhost. Please use the .jar (TDLProject.jar) to run the program from command line. The localhost is 9092.
 
+Unforunately, there was an issue with my github before the deadline and all my files were deleted, as such I had to use an older version of my project for submission. The only issue is that the project is named CarProject. As I was short for time, I did not try to change my project name to avoid further damage to my code.
+
 # Repository details
 This git repository holds both the front-end and back-end of my project. The front-end folders are located in src/main/resources/static.
 
